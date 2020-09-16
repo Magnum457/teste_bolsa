@@ -13,7 +13,7 @@ class UserController {
                 data
             })
         } catch (error) {
-            return res.json({ msg: error.message })
+            return res.status(404).send('Error')
         }
     }
 }
